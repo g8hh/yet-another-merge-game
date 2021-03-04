@@ -589,7 +589,7 @@ var gameFunctions =
     {
         let foamToGet = gameFunctions.getQuantumFoam(game.matterThisPrestige);
 
-        if(foamToGet.gt(0) && confirm("Prestiging will remove bought Matter Upgrades and the current Matter you have. Are you sure?"))
+        if(foamToGet.gt(0) && confirm("声望将移除购买的物质升级和你现有的物质。你确定吗?"))
         {
             game.prestige.quantumFoam = game.prestige.quantumFoam.add(foamToGet);
             game.prestige.bankedQuantumFoam = game.prestige.bankedQuantumFoam.add(foamToGet);
