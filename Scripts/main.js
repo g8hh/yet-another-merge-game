@@ -671,8 +671,8 @@ var gameFunctions =
     {
         if(game.quantumProcessor.cores.length < 5 && game.prestige.quantumFoam.gte(gameFunctions.getProcessorCorePrice()))
         {
-            if(confirm("Buying a Quantum Processor Core will boost all Matter production by x25," +
-                "but current Matter, Matter Upgrades, Prestige Upgrades and Quantum Foam will be lost. Are you sure?"))
+            if(confirm("购买一个量子处理器核心将使所有物质的产量提高25倍，" +
+                "但目前的物质，物质升级，声望升级和量子泡沫将失去。你确定吗?"))
             {
                 game.mergeObjects = [];
                 game.matter = new Decimal(0);
