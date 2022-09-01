@@ -85,7 +85,7 @@ Vue.component("tab-settings", {
         <p class="text-l">The Game auto-saves.<br/>Browser Storage isn't the most reliable thing on Earth and Cleaning Tools might intervene. Make sure to export frequently!</p>
     </div>
     <div class="footer flex-between padding-h-xl">
-        <button class="support" @click="openSupport()">Support Me ♥</button>
+        <button class="support" @click="openSupport()">Thanks for playing!</button>
         <button @click="openCredits()">Credits</button>
     </div>
 </div>`
