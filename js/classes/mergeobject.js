@@ -81,8 +81,7 @@ class MergeObject {
     }
 
     static calculateOutputForLevel(level) {
-        const social = localStorage.getItem("YetAnotherMergeGame_Support_YT") !== null ? 
-            game.prestige.upgrades.socialBoost.apply() : 1;
+        const social = game.prestige.upgrades.socialBoost.apply();
         return Decimal.pow(Upgrade.apply(game.molecules.upgrades.mergerLevelExponent), level).mul(game.prestige.getQuantumFoamBoost())
             .mul(Upgrade.apply(game.prestige.upgrades.matterBoost))
             .mul(game.energyCores.getCoreBoost())

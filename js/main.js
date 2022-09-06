@@ -87,7 +87,7 @@ function gameInit() {
     }
 
     onbeforeunload = SaveManager.saveGame;
-
+    
     if(Utils.isIPad()){
         const iPadFix = () => {
             const mergeDisplay = document.querySelector("#mergedisplay");
